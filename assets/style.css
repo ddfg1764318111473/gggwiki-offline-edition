@@ -1,0 +1,52 @@
+body { font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+       max-width: 1000px; margin: 0 auto; padding: 20px; line-height: 1.6;
+       color: #202122; background: #fff; }
+a { color: #3366cc; text-decoration: none; }
+a:visited { color: #663366; }
+a:hover { text-decoration: underline; }
+a.red { color: #ba0000; }
+h1 { border-bottom: 1px solid #a2a9b1; font-size: 1.8em; }
+h2 { border-bottom: 1px solid #a2a9b1; margin-top: 1.5em; }
+h3, h4, h5, h6 { margin-top: 1.2em; }
+table.wikitable { border-collapse: collapse; margin: 1em 0; }
+table.wikitable td, table.wikitable th { border: 1px solid #a2a9b1; padding: 0.2em 0.4em; }
+table.wikitable th { background: #eaecf0; }
+img { max-width: 100%; }
+pre, code { background: #f8f9fa; border: 1px solid #eaecf0; padding: 0.1em 0.3em; }
+pre { padding: 1em; overflow-x: auto; }
+blockquote { border-left: 3px solid #c8ccd1; margin-left: 0; padding-left: 1em; color: #54595d; }
+.nav { font-size: 0.85em; color: #54595d; margin-bottom: 1em; }
+hr { border: none; border-top: 1px solid #a2a9b1; }
+.thumb { margin: 0.5em; }
+.thumbinner { border: 1px solid #c8ccd1; padding: 3px; background: #f8f9fa; }
+.gallery img { vertical-align: middle; }
+@media (prefers-color-scheme: dark) {
+  body { background: #1a1a1a; color: #e0e0e0; }
+  a { color: #6e9ef8; }
+  table.wikitable th { background: #333; }
+  table.wikitable td, table.wikitable th { border-color: #555; }
+  pre, code { background: #2a2a2a; border-color: #444; }
+}
+
+input#q { border: 1px solid #a2a9b1; border-radius: 4px; }
+
+/* ===== 重构版新增样式 ===== */
+#topbar { position: sticky; top: 0; z-index: 10; background: var(--bg, #fff);
+          border-bottom: 1px solid #a2a9b1; padding: 8px 0; margin-bottom: 1em; }
+#topbar .inner { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+#topbar a.brand { font-weight: 600; font-size: 1.05em; }
+#topbar input { flex: 1 1 160px; min-width: 120px; padding: 6px 8px; font-size: 1em;
+                border: 1px solid #a2a9b1; border-radius: 4px; }
+#topbar .btn { padding: 6px 10px; border: 1px solid #a2a9b1; border-radius: 4px;
+               background: transparent; color: inherit; font-size: .9em; cursor: pointer; }
+#status { font-size: .85em; color: #54595d; min-height: 1.2em; }
+.snippet { font-size: .85em; color: #54595d; margin: .2em 0 .6em 1.2em; }
+mark { background: #ffe08a; color: inherit; }
+#list ul { margin: .2em 0 .8em; }
+#list li { margin: .1em 0; }
+.toc-box { background: #f8f9fa; border: 1px solid #eaecf0; padding: .8em 1em; margin: 1em 0; }
+@media (prefers-color-scheme: dark) {
+  #topbar { background: #1a1a1a; }
+  .toc-box { background: #2a2a2a; border-color: #444; }
+  mark { background: #7a5c00; }
+}

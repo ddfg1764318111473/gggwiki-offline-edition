@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Googology Wiki 离线版</title>
+<meta name="description" content="Googology Wiki 中文站的离线存档，546 个页面，分片按需加载。">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+MathJax = {
+  tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+</head>
+<body>
+<div id="topbar">
+  <div class="inner">
+    <a class="brand" href="#">Googology Wiki</a>
+    <input id="q" type="search" placeholder="搜索页面标题…" autocomplete="off">
+    <button class="btn" id="btn-full" type="button">全文搜索</button>
+    <button class="btn" id="btn-random" type="button">随机页面</button>
+  </div>
+  <div id="status"></div>
+</div>
+<div id="main"><p>正在加载索引…</p></div>
+<noscript><p style="color:#ba0000">本页面依赖 JavaScript 进行路由与分片加载，请开启 JavaScript 后访问。</p></noscript>
+<script src="assets/app.js"></script>
+</body>
+</html>
