@@ -133,7 +133,7 @@
       var foot = document.createElement('p');
       foot.className = 'nav';
       foot.innerHTML = '<hr>离线存档自 <a href="https://wiki.googology.top" target="_blank" rel="noopener">Googology Wiki</a>'
-        + ' · 抓取时间 2026-08-31';
+        + ' · 抓取时间 2026-09-29';
       main.appendChild(foot);
 
       setStatus('');
